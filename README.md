@@ -23,7 +23,6 @@ chmod 744 run_project.sh
 Docker上でプログラムを実行するまで
 （時間がかかる）
 ```
-chmod 744 start_up.sh
 ./start_up.sh
 ```
 
