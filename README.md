@@ -2,8 +2,7 @@
 
 ## 使い方
 
-USBカメラを繋げてJetsonを起動。
-HDMIでJetsonをディスプレイに繋ぐ。
+USBカメラ、Wi-Fiドングル、キーボードHDMIを繋げてJetsonを起動。
 
 Jetson上で以下のコマンドを実行する。
 
