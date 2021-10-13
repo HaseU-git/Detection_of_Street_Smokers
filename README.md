@@ -14,7 +14,7 @@ cd jetson_team_c
 ```
 
 Dockerを起動するところまで
-（時間がかかる）
+（10分程度時間がかかる）
 ```
 chmod 744 run_project.sh
 ./runproject.sh
