@@ -2,8 +2,7 @@
 
 ## 使い方
 
-USBカメラを繋げてJetsonを起動。
-HDMIでJetsonをディスプレイに繋ぐ。
+USBカメラ、Wi-Fiドングル、キーボードHDMIを繋げてJetsonを起動。
 
 Jetson上で以下のコマンドを実行する。
 
@@ -21,8 +20,7 @@ chmod 744 run_project.sh
 ```
 
 Docker上でプログラムを実行するまで
-（時間がかかる）
+（15分程度時間がかかる）
 ```
 ./start_up.sh
 ```
-
