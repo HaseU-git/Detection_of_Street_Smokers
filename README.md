@@ -44,7 +44,7 @@ We are assuming that this application is used on NVIDIA Jetson Nano so it might 
 Let's clone this repoository into your NVIDIA Jetson Nano.
 
 ```shell
-git clone https://github.com/Hase-U/プロジェクト名
+git clone https://github.com/Hase-U/Smoker_Notifier
 ```
 
 Next, follow the documents below.
