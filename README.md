@@ -2,8 +2,7 @@
 
 Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5) on [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)  
 
-https://user-images.githubusercontent.com/64348058/138312354-59ad5eeb-9454-463e-8057-2cd46483a1c6.mp4
-
+![github](https://user-images.githubusercontent.com/64348058/138314179-14dfeb87-90bd-4731-a1b8-b4e709240762.gif)
 
 ## Table of context
 - About the project
