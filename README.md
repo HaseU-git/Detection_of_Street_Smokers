@@ -113,7 +113,11 @@ service docker start
 
 #### Camera
 
-We will use the USB Camera（webカメラの種類を入れる） for detection. If you use CSI Camara or other cameras you might have to rewrite our source code. (For example `-v` option of `docker run` command in `run_project.sh`)  
+We use [this USB Camera](https://www.logitech.com/en-us/products/webcams/c270-hd-webcam.960-000694.html) for detection.    
+
+カメラの写真
+
+If you use CSI Camara or other cameras you might have to rewrite our source code. (For example `-v` option of `docker run` command in `run_project.sh`)  
 
 Please check if your camera is connected before run Docer container.
 
@@ -129,11 +133,50 @@ If the display show `/dev/video0`, your camera is connected.
 
 #### Webhook
 
-**webhookの設定の仕方をかく**
+If you want to accept the message when the device find the specific class (in this case when smoker is deteced), it is necessary to do the setting by following instruction.  
+
+There are four template files for each webhook services (LINE, IFTTT, Discord and Slack). Following instruction is written in order to accept the detection message in Slack.  
+
+##### Slack
+
+Please sign up and log in Slack before settinng of the webhook. And you need to create workspace if you don't have any workspaces. 
+
+If you done, you can click [here](workspace). 
+
+写真  
+
+Then you can see this kind web page. You can choose workspaces by upper right pull down button and you can choose channels by center pull down button. Press `Add Incoming WebHooks integration` button and you can see following web page. 
+
+写真  
+
+`Webhook URL` shows your url so please copy this link.  
+Open `wbhk.py` (it is in `ssdetector` directory) in text editor and paste webhook url into `YOUR_WEBHOOK_URL`.  
+
+写真
+
+If you done these steps, you can receive the message in Slack when device detect smoker.
+
+##### Others(Discord, IFTTT, LINE)
+
+If you want to use other webhook services such as IFTTT, our repository has template files so you can use these files. 
+(In case of Discord: `wbhk_discord.py`, In case of IFTTT: `wbhk_discord.py`, In case of LINE: `wbhk_discord.py`)  
+
+You can copy the webhook URL in the similar way as Slack. But you have to change one more thing.  
+Open `ssdetector.py` file.  You can find following code in the sixth line.  
+
+```
+proggram[:
+w]
+```
 
 #### Internet
 
-The internet environment is reqired to clone YOLOv5 repositorry. We reccomend attaching wi-fi adoptor to connect the Internet. You can check your network environment using folloing command.  
+The internet environment is reqired to clone YOLOv5 repositorry. We reccomend attaching wi-fi adoptor to connect the Internet.
+This is my wi-fi adoptor.
+
+写真
+
+You can check your network environment using folloing command.  
 
 ```
 ifconfig
