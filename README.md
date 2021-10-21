@@ -47,6 +47,9 @@ Let's clone this repoository into your NVIDIA Jetson Nano.
 git clone https://github.com/Hase-U/Smoker_Notifier
 ```
 
+<img width="1329" alt="スクショ 2021-10-22 at 1 11 33" src="https://user-images.githubusercontent.com/64348058/138316469-1a646799-feed-48bd-9130-d818a831d4d3.png">
+
+
 Next, follow the documents below.
 
 ### Prerequisites
