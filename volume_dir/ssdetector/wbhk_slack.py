@@ -2,7 +2,7 @@ import time
 import json
 import requests
 
-WEBHOOK_URL = 'YOUR_WEBHOOK_URL'
+WEBHOOK_URL = 'https://hooks.slack.com/services/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'
 
 def webhook_request(img):
     data = {'text' : f"{time.strftime('%Y/%m/%d %H:%M:%S')} Smoker Detected"}
