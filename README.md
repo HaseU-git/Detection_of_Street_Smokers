@@ -220,6 +220,9 @@ cd /location/in/container/yolov5
 python3 ssdetector.py --source 0 --interval 60
 ```
 
+![moeko_long_2021-08-15_3](https://user-images.githubusercontent.com/64348058/138320243-76bdd6e3-5058-47c0-b9e7-4bd5e853b1c6.gif)
+
+
 You can use `--interval` option. This option can set the interval of sending message in seconds. If you set this option to 60, detection messages will not notify until 60 seconds pass from the first time that device detect smoker. 
  
 So you can set `--interval` option to 1 if you want receive every seconds.
