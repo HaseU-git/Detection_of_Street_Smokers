@@ -1,59 +1,8 @@
-# プロジェクトの名前  
-
-<hr>
-
-## 使い方
-
-USBカメラ、Wi-Fiドングル、キーボードHDMIを繋げてJetsonを起動。
-
-Jetson上で以下のコマンドを実行する。
-
-git clone yolov5をクローンして  
-```
-mkdir work_dir
-cd work_dir
-
-mkdir volume_dir
-```
-
-このリポジトリをクローン
-```
-git clone https://github.com/HaseU-git/jetson_team_c/
-
-cp jetson_team_c/
-```
-
-Dockerを起動するところまで
-（10分程度時間がかかる）
-```
-chmod 744 jetson_team_c/run_docker.sh
-jetson_team_c/runproject.sh
-```
-
-Docker上でプログラムを実行するまで
-（15分程度時間がかかる）
-```
-./start_up.sh
-
-```
-<hr>
-
-
 # プロジェクトの名前
 
 Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5) on [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)  
 
 **写真 or 動画でも入れる？？**  
-
-<hr>
-
-## プロジェクトについて
-
-<hr>
-
-<hr>
-
-## 社会的背景について
 
 <hr>
 
@@ -64,26 +13,43 @@ Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5
 
 <hr>
 
-We couldn't find any real-time detection project using YOLOv5. 
-
-We are assuming that this application is used on NVIDIA Jetson Nano so it might not work well if you do not use this device. Our project runs Docker container to prevent this kind of situation  but we cannot assure that no errors will occur.
 
 ## チャットbotについて？  
 
 ## Table of context
 - About the project
+	- Background
+	- What this application do
+	- Why Jetson Nano and YOLOv5
 	- Built With
 - Getting Started
 	- Prerequisites
 	- Installation
 - Usage
+	- Detect Only
+	- Detect and Notify
 
 
 ## About The Project
 
+### Background
+
+It is clear that smoking poses health and environmental problems. Particularly in recent years, with the decrease in the number of smoking areas, there are concerns about littering and passive smoking. However, it is difficult to constantly monitor smoking and call attention on the streets.  
+Our project sends a notification when it detects smokers, so it can efficiently prevent smoking on the streets.
+
+### What this application do
+
+This project using the Jetson Nano detects in areas where smoking is prohibited. Detection is conducted by YOLOv5s model.  
+When a smoker is detected, notifications can be sent to various services and applications such as Slack, LINE, IFTTT, etc. to inform the administrator of the abnormality.
+
+#### Why Jetson Nano and YOLOv5
+We wonder if NVIDIA Jetson Nano can detect specific object in real-time by using YOLOv5 because we couldn't find any real-time detection project using YOLOv5. The use of edge AI is expanding. We tought more problems will be solved if it works well.
+
 ### Built With
 - NVIDIA Docker: 2.0.3 Engine: 20.10.7
 - YOLOv5 by ultralytics
+
+We are assuming that this application is used on NVIDIA Jetson Nano so it might not work well if you do not use this device. Our project runs Docker container to prevent this kind of situation  but we cannot assure that no errors will occur.  
 
 ## Getting Started
 
@@ -98,6 +64,7 @@ Next, follow the documents below.
 ### Prerequisites
 
 Before run this application, there are some requirements so please check them.
+
 
 #### Docker
 
@@ -147,6 +114,8 @@ If you want to accept the message when the device find the specific class (in th
 
 There are four template files for each webhook services (LINE, IFTTT, Discord and Slack). Following instruction is written in order to accept the detection message in Slack.  
 
+<hr>
+
 ##### Slack
 
 Please sign up and log in Slack before settinng of the webhook. And you need to create workspace if you don't have any workspaces. 
@@ -165,6 +134,8 @@ Open `wbhk.py` (it is in `ssdetector` directory) in text editor and paste webhoo
 写真
 
 If you done these steps, you can receive the message in Slack when device detect smoker.
+
+<hr>
 
 ##### Others(Discord, IFTTT, LINE)
 
@@ -186,6 +157,8 @@ from webhk_ifttt import webhook_request
 
 Then you can receive the message from any services.
 
+<hr>
+
 #### Internet
 
 The internet environment is reqired to clone YOLOv5 repositorry. We reccomend attaching wi-fi adoptor to connect the Internet.
@@ -198,6 +171,7 @@ You can check your network environment using folloing command.
 ```
 ifconfig
 ```
+<hr>
 
 ### Installation
 
@@ -215,6 +189,8 @@ sudo chmod 744 integrate_yolov5.sh
 ./integrate_yolov5.sh
 ```
 
+<hr>
+
 #### Docker
 
 Second, pull Docker image and build Docker image. Then run the docker container. Again, we prepare shell scrip to do this. Please command following code.
@@ -225,6 +201,8 @@ sudo chmod 744 run_docker.sh
 ```
 It takes several minutes unil finish this process. Wait patiently :)
 Finally, you loged in Docker container.
+
+<hr>
 
 ## Usage
 
@@ -241,6 +219,8 @@ python3 detect_only.py --source 0 --weights weight.pt
 
 This code is default detection code YOLOv5 so please visit [this page](https://github.com/ultralytics/yolov5) if you want to know more detail.
 
+<hr>
+
 ### Detect and Notify
 
 If you want receive the message from device when specific class is detected, please command following code.
@@ -253,6 +233,8 @@ python3 ssdetector.py --source 0 --interval 60
 You can use `--interval` option. This option can set the interval of sending message in seconds. If you set this option to 60, detection messages will not notify until 60 seconds pass from the first time that device detect smoker. 
  
 So you can set `--interval` option to 1 if you want receive every seconds.
+
+<hr>
 
 ## Roadmap
 
