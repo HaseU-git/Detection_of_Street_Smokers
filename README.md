@@ -30,7 +30,7 @@ Our project sends a notification when it detects smokers, so it can efficiently 
 This project using the Jetson Nano detects in areas where smoking is prohibited. Detection is conducted by YOLOv5s model.  
 When a smoker is detected, notifications can be sent to various services and applications such as Slack, LINE, IFTTT, etc. to inform the administrator of the abnormality.
 
-#### Why Jetson Nano and YOLOv5
+### Why Jetson Nano and YOLOv5
 We wonder if NVIDIA Jetson Nano can detect specific object in real-time by using YOLOv5 because we couldn't find any real-time detection project using YOLOv5. The use of edge AI is expanding. We tought more problems will be solved if it works well.
 
 ### Built With
