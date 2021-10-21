@@ -159,28 +159,36 @@ If you done these steps, you can receive the message in Slack when device detect
 ##### Others(Discord, IFTTT, LINE)
 
 If you want to use other webhook services such as IFTTT, our repository has template files so you can use these files. 
-(In case of Discord: `wbhk_discord.py`, In case of IFTTT: `wbhk_discord.py`, In case of LINE: `wbhk_discord.py`)  
+(In case of IFTTT: `wbhk_discord.py`, In case of Discord: `wbhk_discord.py`, In case of LINE: `wbhk_discord.py`)  
 
 You can copy the webhook URL in the similar way as Slack. But you have to change one more thing.  
 Open `ssdetector.py` file.  You can find following code in the sixth line.  
 
+```python
+from wbhk import webhook_request
 ```
-proggram[:
-w]
+
+Replace `wbhk` with other wbhk file name. For example, rerwite as folloing code if you want to use IFTTT.
+
+```python
+from webhk_ifttt import webhook_request
 ```
+
+Then you can receive the message from any services.
 
 #### Internet
 
 The internet environment is reqired to clone YOLOv5 repositorry. We reccomend attaching wi-fi adoptor to connect the Internet.
-This is my wi-fi adoptor.
+This is the [wi-fi adoptor](https://www.elecom.co.jp/products/WDC-150SU2MBK.html) that I use.
 
-写真
+Wi-Fiドングルの写真
 
 You can check your network environment using folloing command.  
 
 ```
 ifconfig
-```
+``
+
 
 ### Installation
 
