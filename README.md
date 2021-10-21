@@ -26,7 +26,7 @@ cp jetson_team_c/
 Dockerを起動するところまで
 （10分程度時間がかかる）
 ```
-chmod 744 jetson_team_c/run_project.sh
+chmod 744 jetson_team_c/run_docker.sh
 jetson_team_c/runproject.sh
 ```
 
@@ -147,7 +147,7 @@ You can run our project by doing following steps.
 2. Clone YOLOv5 and integrate our source code
 3. Build the docker image and run the docker container  
 
-#### Github
+#### YOLOv5
 
 ```
 git clone https://HaseU-git/プロジェクト名  
@@ -158,9 +158,13 @@ git clone https://HaseU-git/プロジェクト名
 
 ```
 sudo chmod 744 run_docker.sh
+./run_docker.sh
 ```
 
-#### 
+```
+```
+
+### 
 
 ## Usage
 
