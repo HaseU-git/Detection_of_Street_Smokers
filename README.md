@@ -66,6 +66,9 @@ Check version
 nvidia-docer version
 ```
 
+<img width="1280" alt="スクショ 2021-10-22 at 1 13 39" src="https://user-images.githubusercontent.com/64348058/138316774-e4e49eba-629a-4cdd-b12f-5fe580aff62f.png">
+
+
 Check Docker daemon status
 
 ```
