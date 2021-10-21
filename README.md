@@ -87,7 +87,17 @@ We are assuming that this application is used on NVIDIA Jetson Nano so it might 
 
 ## Getting Started
 
+Let's clone this repoository into your NVIDIA Jetson Nano.
+
+```shell
+git clone https://github.com/Hase-U/プロジェクト名
+```
+
+Next, follow the documents below.
+
 ### Prerequisites
+
+Before run this application, there are some requirements so please check them.
 
 #### Docker
 
@@ -141,7 +151,7 @@ There are four template files for each webhook services (LINE, IFTTT, Discord an
 
 Please sign up and log in Slack before settinng of the webhook. And you need to create workspace if you don't have any workspaces. 
 
-If you done, you can click [here](workspace). 
+If you done, you can click [here](https://slack.com/services/new/incoming-webhook). 
 
 写真  
 
@@ -187,37 +197,62 @@ You can check your network environment using folloing command.
 
 ```
 ifconfig
-``
-
+```
 
 ### Installation
 
-You can run our project by doing following steps.
+You can install our project by doing following steps.
 
-1. Clone this repository  
-2. Clone YOLOv5 and integrate our source code
-3. Build the docker image and run the docker container  
+1. Clone YOLOv5 and integrate our source code
+2. Build the docker image and run the docker container  
 
 #### YOLOv5
 
-```
-git clone https://HaseU-git/プロジェクト名  
+First, you have to clone YOLOv5 and integrate our code. We prepare shell scrip to do this. Please command following code.
 
+```shell
+sudo chmod 744 integrate_yolov5.sh
+./integrate_yolov5.sh
 ```
 
 #### Docker
 
-```
+Second, pull Docker image and build Docker image. Then run the docker container. Again, we prepare shell scrip to do this. Please command following code.
+
+```shell
 sudo chmod 744 run_docker.sh
 ./run_docker.sh
 ```
-
-```
-```
-
-### 
+It takes several minutes unil finish this process. Wait patiently :)
+Finally, you loged in Docker container.
 
 ## Usage
+
+Let's detect!!
+
+### Detect Only
+
+If you do not want to receive any messages, please command following code.  
+
+```shell
+cd /location/in/container/yolov5
+python3 detect_only.py --source 0 --weights weight.pt
+```
+
+This code is default detection code YOLOv5 so please visit [this page](https://github.com/ultralytics/yolov5) if you want to know more detail.
+
+### Detect and Notify
+
+If you want receive the message from device when specific class is detected, please command following code.
+
+```shell
+cd /location/in/container/yolov5
+python3 ssdetector.py --source 0 --interval 60
+```
+
+You can use `--interval` option. This option can set the interval of sending message in seconds. If you set this option to 60, detection messages will not notify until 60 seconds pass from the first time that device detect smoker. 
+ 
+So you can set `--interval` option to 1 if you want receive every seconds.
 
 ## Roadmap
 
