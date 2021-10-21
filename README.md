@@ -4,18 +4,6 @@ Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5
 
 **写真 or 動画でも入れる？？**  
 
-<hr>
-
-
-<hr>
-
-## YOLOv5を使用した理由について？
-
-<hr>
-
-
-## チャットbotについて？  
-
 ## Table of context
 - About the project
 	- Background
@@ -113,8 +101,6 @@ If the display show `/dev/video0`, your camera is connected.
 If you want to accept the message when the device find the specific class (in this case when smoker is deteced), it is necessary to do the setting by following instruction.  
 
 There are four template files for each webhook services (LINE, IFTTT, Discord and Slack). Following instruction is written in order to accept the detection message in Slack.  
-
-<hr>
 
 ##### Slack
 
