@@ -83,7 +83,8 @@ service docker start
 
 We use [this USB Camera](https://www.logitech.com/en-us/products/webcams/c270-hd-webcam.960-000694.html) for detection.    
 
-カメラの写真
+![IMG_1982](https://user-images.githubusercontent.com/64348058/138317139-1d07e838-c0c1-4c4b-90b0-82db435f16dc.JPG)
+
 
 If you use CSI Camara or other cameras you might have to rewrite our source code. (For example `-v` option of `docker run` command in `run_project.sh`)  
 
@@ -111,16 +112,16 @@ Please sign up and log in Slack before settinng of the webhook. And you need to 
 
 If you done, you can click [here](https://slack.com/services/new/incoming-webhook). 
 
-写真  
+<img width="1680" alt="スクショ 2021-10-21 at 22 44 14" src="https://user-images.githubusercontent.com/64348058/138317364-f61b6604-ab94-46f3-92a3-ef8692d33b9a.png">
 
 Then you can see this kind web page. You can choose workspaces by upper right pull down button and you can choose channels by center pull down button. Press `Add Incoming WebHooks integration` button and you can see following web page. 
 
-写真  
+<img width="1680" alt="スクショ 2021-10-21 at 22 44 54" src="https://user-images.githubusercontent.com/64348058/138317659-9d5a02c9-25a7-411c-af48-1bb002218b15.png">
 
 `Webhook URL` shows your url so please copy this link.  
 Open `wbhk.py` (it is in `ssdetector` directory) in text editor and paste webhook url into `YOUR_WEBHOOK_URL`.  
 
-写真
+<img width="1680" alt="スクショ 2021-10-21 at 23 00 41" src="https://user-images.githubusercontent.com/64348058/138317923-29d8777b-57f0-4e45-9ede-2a0f755b76e7.png">
 
 If you done these steps, you can receive the message in Slack when device detect smoker.
 
@@ -153,7 +154,7 @@ Then you can receive the message from any services.
 The internet environment is reqired to clone YOLOv5 repositorry. We reccomend attaching wi-fi adoptor to connect the Internet.
 This is the [wi-fi adoptor](https://www.elecom.co.jp/products/WDC-150SU2MBK.html) that I use.
 
-Wi-Fiドングルの写真
+![IMG_1986](https://user-images.githubusercontent.com/64348058/138318220-7c02fa7f-8ea0-403b-8625-e15e2e4fe429.jpg)
 
 You can check your network environment using folloing command.  
 
@@ -199,7 +200,7 @@ Let's detect!!
 
 ### Detect Only
 
-If you do not want to receive any messages, please command following code.  
+If you do not want to receive any messages, please command following code (It takes several minutes).
 
 ```shell
 cd /location/in/container/yolov5
@@ -212,8 +213,8 @@ This code is default detection code YOLOv5 so please visit [this page](https://g
 
 ### Detect and Notify
 
-If you want receive the message from device when specific class is detected, please command following code.
-
+If you want receive the message from device when specific class is detected, please command following code (It takes several minutes)
+. 
 ```shell
 cd /location/in/container/yolov5
 python3 ssdetector.py --source 0 --interval 60
