@@ -86,7 +86,7 @@ We use [this USB Camera](https://www.logitech.com/en-us/products/webcams/c270-hd
 ![IMG_1982](https://user-images.githubusercontent.com/64348058/138317139-1d07e838-c0c1-4c4b-90b0-82db435f16dc.JPG)
 
 
-If you use CSI Camara or other cameras you might have to rewrite our source code. (For example `-v` option of `docker run` command in `run_project.sh`)  
+If you use CSI Camara or other cameras you might have to rewrite our source code. (For example `-v` option of `docker run` command in `run_docker.sh`)  
 
 Please check if your camera is connected before run Docer container.
 
