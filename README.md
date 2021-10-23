@@ -234,5 +234,5 @@ This project is licensed under the GPL-3.0 License - see the `LICENSE` file for 
 
 Thanks to these projects we completed this projects.
 
-[YOLOv5 by Ultralitics](https://github.com/ultralytics/yolov5)
-[NVIDIA L4T ML Docker Image](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-ml)  
+- [YOLOv5 by Ultralitics](https://github.com/ultralytics/yolov5)
+- [NVIDIA L4T ML Docker Image](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-ml)  
