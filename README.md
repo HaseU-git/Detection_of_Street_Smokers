@@ -5,18 +5,17 @@ Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5
 ![github](https://user-images.githubusercontent.com/64348058/138314179-14dfeb87-90bd-4731-a1b8-b4e709240762.gif)
 
 ## Table of context
-- About the project
-	- Background
-	- What this application do
-	- Why Jetson Nano and YOLOv5
-	- Built With
-- Getting Started
-	- Prerequisites
-	- Installation
-- Usage
-	- Detect Only
-	- Detect and Notify
-
+- [About the project](https://github.com/HaseU-git/Detection_of_Street_Smokers#about-the-project)
+	- [Background](https://github.com/HaseU-git/Detection_of_Street_Smokers#background)
+	- [What this application do](https://github.com/HaseU-git/Detection_of_Street_Smokers#what-this-application-do)
+	- [Why Jetson Nano and YOLOv5](https://github.com/HaseU-git/Detection_of_Street_Smokers#why-jetson-nano-and-yolov5)
+	- [Built With](https://github.com/HaseU-git/Detection_of_Street_Smokers#built-with)
+- [Getting Started](https://github.com/HaseU-git/Detection_of_Street_Smokers#getting-started)
+	- [Prerequisites](https://github.com/HaseU-git/Detection_of_Street_Smokers#prerequisites)
+	- [Installation](https://github.com/HaseU-git/Detection_of_Street_Smokers#installation)
+- [Usage](https://github.com/HaseU-git/Detection_of_Street_Smokers#usage)
+	- [Detect Only](https://github.com/HaseU-git/Detection_of_Street_Smokers#detect-only)
+	- [Detect and Notify](https://github.com/HaseU-git/Detection_of_Street_Smokers#detect-and-notify)
 
 ## About The Project
 
