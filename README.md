@@ -226,20 +226,8 @@ You can use `--interval` option. This option allows you to set the minimum inter
 
 You will not receive a large number of notifications by the continued detection of the same smoker.
 
-<hr>
-
-## Roadmap
-
-## Contribution
-
 ## License
 
-## Contact
+This project is licensed under the GPL-3.0 License - see the `LICENSE` file for details.
 
 ## Acknowledgments
-
-## Device
-
-NVIDIA Jetson Nano
-
-## Technologies
