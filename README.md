@@ -1,4 +1,4 @@
-# Smoker_Notifier
+# Detection_of_Street_Smokers
 
 Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5) on [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)  
 
