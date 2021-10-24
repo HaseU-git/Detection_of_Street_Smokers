@@ -43,7 +43,7 @@ We are assuming that this application is used on NVIDIA Jetson Nano so it might 
 Let's clone this repository into your NVIDIA Jetson Nano.
 
 ```shell
-$ git clone https://github.com/Hase-U/Smoker_Notifier
+$ https://github.com/HaseU-git/Detection_of_Street_Smokers
 ```
 
 Next, follow the documents below.
@@ -203,7 +203,7 @@ If you do not want to receive any messages, please command following code (It ta
 
 ```shell
 $ cd /location/in/container/yolov5
-$ python3 detect_only.py --source 0 --weights weight.pt
+$ python3 detect_only.py --source 0 --weights ../weight.pt
 ```
 
 This code is default detection code YOLOv5 so please visit [this page](https://github.com/ultralytics/yolov5) if you want to know more detail.
