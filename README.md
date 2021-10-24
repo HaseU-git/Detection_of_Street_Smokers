@@ -203,7 +203,7 @@ If you do not want to receive any messages, please command following code (It ta
 
 ```shell
 $ cd /location/in/container/yolov5
-$ python3 detect_only.py --source 0 --weights ../weight.pt
+$ python3 detect_only.py --source 0 --weights weight.pt
 ```
 
 This code is default detection code YOLOv5 so please visit [this page](https://github.com/ultralytics/yolov5) if you want to know more detail.
