@@ -185,20 +185,20 @@ $ ./integrate_yolov5.sh
 
 #### Docker
 
-Second, pull Docker image and build Docker image. Then run the docker container
+Second, pull Docker image and build Docker image. Then run the docker container.
 
-First, pull the docker image
-
+Pull image
+We use [this Docker image](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-ml) so please pull it.
 ```shell
 $ sudo docker pull nvcr.io/nvidia/l4t-ml:r32.6.1-py3
 ```
 
-Second, build the docker image.
+Build image
 ```shell
 $ sudo docker build . -t jetson_keio_teamc
 ```
 
-Third, run the docker container.
+Run container
 Check [this page](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base) if you want to know docker options.
 ```
 $ sudo docker run -it -e DISPLAY=$DISPLAY --gpus all --device /dev/video0 -v $PWD/volume_dir:/location/in/container -v /tmp/.X11-unix:/tmp/.X11-unix jetson_keio_teamc
