@@ -182,11 +182,13 @@ $ ./integrate_yolov5.sh
 
 #### Docker
 
-Second, pull Docker image and build Docker image. Then run the docker container. Again, we prepare shell scrip to do this. Please command following code.
+Second, pull Docker image and build Docker image. Then run the docker container.
 
 ```shell
-$ sudo chmod 744 run_docker.sh
-$ ./run_docker.sh
+$ sudo docker pull nvcr.io/nvidia/l4t-ml:r32.6.1-py3
+$ sudo docker build . -t jetson_keio_teamc
+$ sudo docker run -it -e DISPLAY=$DISPLAY --gpus all --device /dev/video0 -v $PWD/volume_dir:/location/in/container -v /tmp/.X11-unix:/tmp/.X11-unix jetson_keio_teamc
+
 ```
 It takes several minutes unil finish this process. Wait patiently :)
 Finally, you loged in Docker container.
