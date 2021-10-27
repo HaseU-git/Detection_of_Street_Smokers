@@ -196,6 +196,7 @@ $ sudo docker build . -t jetson_keio_teamc
 ```
 
 Third, run the docker container.
+Check [this page](https://ngc.nvidia.com/catalog/containers/nvidia:l4t-base) if you want to know docker options.
 ```
 $ sudo docker run -it -e DISPLAY=$DISPLAY --gpus all --device /dev/video0 -v $PWD/volume_dir:/location/in/container -v /tmp/.X11-unix:/tmp/.X11-unix jetson_keio_teamc
 ```
