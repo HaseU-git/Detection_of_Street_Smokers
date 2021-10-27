@@ -1,6 +1,6 @@
 # Detection_of_Street_Smokers
 
-Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5) on [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)  
+Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5) on [Jetson Nano 2GB](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/education-projects/)  
 
 ![github](https://user-images.githubusercontent.com/64348058/138314179-14dfeb87-90bd-4731-a1b8-b4e709240762.gif)
 
@@ -33,6 +33,9 @@ When a smoker is detected, notifications can be sent to various services and app
 We wonder if NVIDIA Jetson Nano can detect specific object in real-time by using YOLOv5 because we couldn't find any real-time detection project using YOLOv5. The use of edge AI is expanding. We thought more problems will be solved if it works well.
 
 ### Built With
+- NVIDIA Jetson Nano
+- USB Web camera (Logicool C270 HD WEBCAM)
+- Wi-Fi adapter (ELECOM WDC-150SU2MBK)
 - NVIDIA Docker: 2.0.3 Engine: 20.10.7
 - YOLOv5 by ultralytics
 
