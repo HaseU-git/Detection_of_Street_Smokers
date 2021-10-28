@@ -1,5 +1,7 @@
 # Detection_of_Street_Smokers
 
+Team C : KEIO University Project by KEIO University (KEIO AIC) x NVIDIA collaboration
+
 Smoker detection application with [YOLOv5](https://github.com/ultralytics/yolov5) on [Jetson Nano 2GB](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/education-projects/)  
 
 ![github](https://user-images.githubusercontent.com/64348058/138314179-14dfeb87-90bd-4731-a1b8-b4e709240762.gif)
